@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+        }
+
+        .clearfix:after {
+            content: '';
+            display: block;
+            clear: both;
+            visibility: hidden;
+        }
+
+        .line {
+            background-color: #E6E6E6;
+            margin-bottom: 50px;
+        }
+
+        .square {
+            width: 200px;
+            height: 200px;
+            background-color: #FC8F8F;
+            color: white;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 75px;
+            text-align: center;
+            padding-top: 62px;
+        }
+
+        .p11,
+        .p21,
+        .p31,
+        .p32 {
+            float: left;
+        }
+
+        .p12 {
+            float: right;
+        }
+
+        .little-squares {
+            font-size: 0px;                    
+            text-align: center;           
+            float: right;
+        }
+
+        .little-squares div {
+            display: inline-block;
+            background-color: #FC8F8F;
+            color: #FFFFFF;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;   
+            width: 100px;
+            height: 100px;
+            line-height: 42px;
+            padding-top: 31px;
+            margin-left: 15px;
+        }
+
+        
+        .p31 {           
+            margin-right: 15px;
+        }
+
+        .big-squares {
+            font-size: 0px;
+            float: right; 
+            text-align: center;       
+        }
+
+        
+        .big-squares div {
+            display: inline-block;
+            background-color: #FC8F8F;
+            line-height: 75px;
+            padding-top: 62px;
+            width: 200px;
+            height: 200px;
+            margin-left: 15px;
+        }
+        .big-squares p {
+            color: white;
+            font-family: 'Roboto';
+            font-weight: 700;
+            font-size: 64px; 
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- first line -->
+        <div class="line clearfix">
+            <div class="square p11">
+                <p class="number1">1</p>
+            </div>
+            <div class="square p12">
+                <p>2</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- second line -->
+        <div class="line clearfix">
+            <div class="square p21">
+                <p>1</p>
+            </div>
+            <div class="little-squares">
+                <div class="items">2</div>
+                <div class="items">3</div>
+                <div class="items">4</div>
+                <div class="items">5</div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="line three clearfix">
+            <div class="square p31">
+                <p>1</p>
+            </div>
+            <div class="square p32">
+                <p>2</p>
+            </div>
+            <div class="big-squares">
+                <div>
+                    <p>3</p>
+                </div>
+                <div>
+                    <p>4</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
